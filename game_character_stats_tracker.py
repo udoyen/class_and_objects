@@ -70,6 +70,6 @@ class GameCharacter:
 
 
 # --- Verification ---
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     kratos = GameCharacter('Kratos')
     print(kratos)

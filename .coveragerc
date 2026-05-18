@@ -1,0 +1,6 @@
+[run]
+omit =
+    # Ignore specific files anywhere in the project
+    */abstraction/animals.py
+    */abstraction/concrete_class.py
+    */abstraction/talking_toys.py

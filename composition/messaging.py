@@ -101,7 +101,7 @@ class User:
         """
         self.inbox.delete_email(index)
 
-def main():
+def main(): # pragma: no cover
     tory = User('Tory')
     ramy = User('Ramy')        
     
@@ -113,5 +113,5 @@ def main():
     ramy.delete_email(1)
     ramy.check_inbox()
     
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     main()

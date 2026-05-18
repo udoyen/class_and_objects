@@ -1,6 +1,6 @@
 import pytest
 # Assuming your class is saved in a file named game_character.py
-from game_character_stats_tracker import GameCharacter
+from class_properties.game_character_stats_tracker import GameCharacter
 
 def test_initialization():
     """Verify that a newly instantiated character has correct starting stats."""

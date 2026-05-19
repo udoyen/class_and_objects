@@ -1,12 +1,16 @@
 """
 Key Testing Patterns Used:
-capsys Built-in Fixture: Your application relies heavily on print() statements to announce actions or handle fallback states (like "Invalid email number."). We use capsys.readouterr() to inspect the terminal console buffer and assert your script prints the proper textual messages.
-Out-of-Bounds Parameterization: The @pytest.mark.parametrize decorator checks four tricky boundary indices (0, negative items like -1, immediate upper ceiling bounds, and massive numbers like 99) to guarantee your system rejects invalid layout references securely without dropping an unhandled IndexError.
+capsys Built-in Fixture: Your application relies heavily on print() 
+statements to announce actions or handle fallback states (like "Invalid email number."). 
+We use capsys.readouterr() to inspect the terminal console buffer and assert your script prints the proper textual messages.
 
-Integration Flow Isolation: test_user_send_and_receive_integration tests the orchestration loop between instances of User, Inbox, and Email in a clean sandbox context separate from your production code's main() runner loop execution space.
+Out-of-Bounds Parameterization: The @pytest.mark.parametrize decorator checks four tricky boundary indices 
+(0, negative items like -1, immediate upper ceiling bounds, and massive numbers like 99) 
+to guarantee your system rejects invalid layout references securely without dropping an unhandled IndexError.
 
-import pytest
-from composition.messaging import User, Email, Inbox  # Replace 'your_module_name' with your actual file name
+Integration Flow Isolation: test_user_send_and_receive_integration tests the orchestration loop between instances of User, 
+Inbox, and Email in a clean sandbox context separate from your production code's main() runner loop execution space.
+
 """
 
 import pytest

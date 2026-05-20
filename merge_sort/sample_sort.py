@@ -24,7 +24,7 @@ def merge_sort(arr):
     return sorted_list
 
     
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     sample_array = [38, 27, 43, 3, 9, 82, 10]
     sample_two = [5, 2, 9, 1, 5]
     # print("Original array:", sample_array)

@@ -30,5 +30,5 @@ def square_root_bisection(target, tolerance=0.01, max_iterations=1000):
     return None
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     square_root_bisection(0.001, 0.0000001, 50)

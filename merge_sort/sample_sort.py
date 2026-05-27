@@ -29,6 +29,6 @@ if __name__ == "__main__": # pragma: no cover
     sample_two = [5, 2, 9, 1, 5]
     # print("Original array:", sample_array)
     sorted_array = merge_sort(sample_array)
-    sorted_array_2 = merge_sort(sample_two)
+    # sorted_array_2 = merge_sort(sample_two)
     print("Sorted array:", sorted_array)
-    print("sorted array:", sorted_array_2)
+    # print("sorted array:", sorted_array_2)

@@ -16,3 +16,9 @@ def quick_sort(array):
 
     # combine the sorted sublists
     return sorted_p1 + p2_sublist + sorted_p3
+
+if __name__ == '__main__':
+    # Example usage
+    unsorted_list = [3, 6, 8, 10, 1, 2, 1]
+    sorted_list = quick_sort(unsorted_list)
+    print("Sorted list:", sorted_list)

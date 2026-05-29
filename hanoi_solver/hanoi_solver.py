@@ -5,11 +5,15 @@ def hanoi_solver(n):
     moves = []
 
     def move_disk(from_rod, to_rod):
+        """
+        Move the top disk from 'from_rod' to 'to_rod' and record the move."""
         disk = rods[from_rod].pop()
         rods[to_rod].append(disk)
         moves.append(f"{rods[0]} {rods[1]} {rods[2]}")
 
     def solve_hanoi(num_disks, from_rod, to_rod, aux_rod): # 0, 2, 1
+        """
+        Recursive function to solve the Tower of Hanoi problem."""
         if num_disks == 1: # Base case: just move one disk directly
             move_disk(from_rod, to_rod)
             return

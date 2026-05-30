@@ -18,6 +18,9 @@ def test_verify_card_number_function_exists():
     ("453914889", "VALID!"),
     ("4111-1111-1111-1111", "VALID!"),
     ("1234 5678 9012 3456", "INVALID!"),
+    ("4539a14889", False),
+    ("4111-1111-1111-111x", False),
+    ("1234 5678 9012 345y", False)
 ])
 def test_lab_required_cases(card_string, expected_result):
     """Tests the exact inputs and outputs requested by the lab grading table."""

@@ -16,7 +16,7 @@ def verify_card_number(num):
     else:
         return 'INVALID!'
     
-if __name__ == "__main__": # prama: no cover
+if __name__ == "__main__": # pragma: no cover
     num = '453914881'
     num2 = '453_914_881'
     num3 = '453-914-881'

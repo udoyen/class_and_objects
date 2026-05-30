@@ -30,7 +30,7 @@ def hanoi_solver(n):
     return "\n".join(moves)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     # Example usage:
     n = 6
     print(hanoi_solver(n))

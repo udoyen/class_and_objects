@@ -1,4 +1,4 @@
-def adjacency_list_to_matrix(adj_list):
+def adjacency_list_to_matrix(adj_list: dict) -> list:
     """Converts an adjacency list to an adjacency matrix."""
     # User Story 1: Determine the number of nodes
     num_nodes = len(adj_list)
@@ -20,7 +20,7 @@ def adjacency_list_to_matrix(adj_list):
 
 
 
-def adjacency_matrix_to_list(adj_matrix):
+def adjacency_matrix_to_list(adj_matrix: list) -> dict:
     """Converts an adjacency matrix to an adjacency list."""
     adj_list = {} # Initialize an empty dictionary to hold the adjacency list
     for i in range(len(adj_matrix)): # Iterate through each row of the matrix
